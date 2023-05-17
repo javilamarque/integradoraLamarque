@@ -6,7 +6,7 @@ const Home = () => {
     const [resultados, setResultado] = useState([]);
     const buscarResultado = async () => {
         const API_KEY = 'TJLOoCTyQLCcRU1kYWSPBAm-9OaJuUdOU2Ts-_SI9cQ';
-        const URL = `https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=15`; // Busca hasta 20 imagenes
+        const URL = `https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=25`; // Busca hasta 20 imagenes
 
         const response = await fetch(URL);
         const data = await response.json();
